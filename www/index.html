@@ -22,7 +22,7 @@
 	<!-- Extra Codiqa features -->
  
 	<link rel="stylesheet" href="css/codiqa.ext.css">
-   	 <title>Acceleration Example</title>
+   	 <title>Tell Me</title>
 
    	 <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
    
@@ -35,8 +35,8 @@ body {
 }  
 /* css กำหนดความกว้าง ความสูงของแผนที่ */  
 #map_canvas {   
-    width:400px;  
-    height:530px;  
+    width=80%;  
+    height=60%;
     margin:auto;  
 /*  margin-top:100px;*/  
 }  
@@ -46,17 +46,16 @@ body {
 </head>  
   
 <body> 
-<div class="navbar navbar-inverse navbar-static-top">
-		<div class="navbar-inner">
-			  <a class="brand" href="#" style="float:center"><center><h1>Tell Me</h1></center></a>
-		</div>
-	</div><br>
+<div data-role="page" id="page1">
+		<div data-theme="a" data-role="header">		
+		<h3>Tell Me</h3>
+</div>
 
 <div align="center">
-<h3>Latitude : 
+<h4>Latitude : 
     <input name="lat_value" type="text" id="lat_value" value="0" /><br>
 Longitude :    
-    <input name="lon_value" type="text" id="lon_value" value="0" /></h3>
+    <input name="lon_value" type="text" id="lon_value" value="0" /></h4>
 </div>
 
   <div id="map_canvas"></div>  
